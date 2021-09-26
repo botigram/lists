@@ -1,0 +1,58 @@
+name: Submit Bot
+description: Submit a Telegram bot to be listed
+title: "Bot Submission"
+labels: [bot request]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the fields carefully
+  - type: input
+    attributes:
+      label: Bot Name
+      description: What is the name of your bot?
+      placeholder: ex. ToolKit
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Description
+      description: Want to have a more detailed explanation of the bot's features? (20-120 characters)
+      placeholder: Toolkit is a moderation Telegram bot....
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Message Link
+      description: The chat link used to start messaging with your bot. Must be hosted under t.me.
+      placeholder: https://t.me/tool_kit_bot
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Channel link
+      description: The link used to get into the bot's official channel. Must be hosted under t.me.
+      placeholder: https://t.me/toolkit_news
+    validations:
+      required: false
+  - type: input
+    attributes:
+      label: Bot avatar URL
+      description: The link to your bot's avatar.
+      placeholder: https://example.com/icon.png
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Bot source code URL
+      description: The link to your bot's source code repository.
+      placeholder: https://github.com/ToolKit-telegram/ToolKit
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Add Tags
+      description: What tags do you want your bot to be found with? (Comma and space seperated!)
+      placeholder: Anime, Moderation, Utility
+    validations:
+      required: true
