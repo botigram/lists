@@ -17,7 +17,7 @@ body:
   - type: textarea
     attributes:
       label: Description
-      description: Want to have a more detailed explanation of the bot's features? (20-120 characters)
+      description: Describe your bot. (20-120 characters)
       placeholder: Toolkit is a moderation Telegram bot....
     validations:
       required: true
